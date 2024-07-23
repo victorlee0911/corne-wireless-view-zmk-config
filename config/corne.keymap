@@ -20,6 +20,18 @@
         };
     };
 
+    macros {
+        windows_ss: window_ss {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT &kp LEFT_GUI>
+                , <&macro_tap &kp S>
+                , <&macro_release &kp LSHFT &kp LEFT_GUI>
+                ;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
