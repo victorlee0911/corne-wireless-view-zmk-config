@@ -17,6 +17,7 @@
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35>;
         };
 
@@ -27,6 +28,7 @@
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
         };
     };
@@ -57,10 +59,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB     &kp Q  &kp W           &kp E             &kp R            &kp T        &kp Y        &kp U        &kp I              &kp O            &kp P      &kp DEL
-&sk LSHIFT  &kp A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LCTRL F      &kp G        &kp H        &hm RCTRL J  &hm RIGHT_SHIFT K  &hm RIGHT_ALT L  &kp UNDER  &kp SQT
-&kp CAPS    &kp Z  &kp X           &kp C             &kp V            &kp B        &kp N        &kp M        &kp COMMA          &kp DOT          &kp FSLH   &kp COLON
-                                   &kp LEFT_GUI      &lt 3 BACKSPACE  &lt 1 TAB    &lt 2 SPACE  &kp ENTER    &kp ESCAPE
+&kp TAB     &kp Q  &kp W        &kp E         &kp R            &kp T        &kp Y        &kp U         &kp I         &kp O        &kp P      &kp DEL
+&sk LSHIFT  &kp A  &lhm LALT S  &lhm LSHFT D  &lhm LCTRL F     &kp G        &kp H        &rhm RCTRL J  &rhm RSHFT K  &rhm RALT L  &kp UNDER  &kp SQT
+&kp CAPS    &kp Z  &kp X        &kp C         &kp V            &kp B        &kp N        &kp M         &kp COMMA     &kp DOT      &kp FSLH   &kp COLON
+                                &kp LEFT_GUI  &lt 3 BACKSPACE  &lt 1 TAB    &lt 2 SPACE  &kp ENTER     &kp ESCAPE
             >;
         };
 
@@ -73,10 +75,10 @@
 
             display-name = "Lower";
             bindings = <
-&trans      &kp F9  &kp F10      &kp F11       &kp F12       &trans    &trans    &kp N7        &kp N8         &kp N9            &trans         &trans
-&kp LSHIFT  &kp F5  &hm LALT F6  &hm LSHFT F7  &hm LCTRL F8  &trans    &kp LEFT  &hm RCTRL N4  &hm RSHIFT N5  &hm RIGHT_ALT N6  &kp RIGHT      &trans
-&kp LCTRL   &kp F1  &kp F2       &kp F3        &kp F4        &trans    &trans    &kp N1        &kp N2         &kp N3            &kp BACKSPACE  &trans
-                                 &kp LGUI      &kp LALT      &trans    &trans    &kp N0        &kp RALT
+&trans      &kp F9  &kp F10       &kp F11        &kp F12        &trans    &trans    &kp N7         &kp N8         &kp N9        &trans         &trans
+&kp LSHIFT  &kp F5  &lhm LALT F6  &lhm LSHFT F7  &lhm LCTRL F8  &trans    &kp LEFT  &rhm RCTRL N4  &rhm RSHFT N5  &rhm RALT N6  &kp RIGHT      &trans
+&kp LCTRL   &kp F1  &kp F2        &kp F3         &kp F4         &trans    &trans    &kp N1         &kp N2         &kp N3        &kp BACKSPACE  &trans
+                                  &kp LGUI       &kp LALT       &trans    &trans    &kp N0         &kp RALT
             >;
         };
 
