@@ -68,10 +68,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB     &kp Q  &kp W        &kp E         &kp R            &kp T        &kp Y        &kp U         &kp I         &kp O        &kp P      &kp DEL
-&sk LSHIFT  &kp A  &bhm LALT S  &bhm LSHFT D  &bhm LCTRL F     &kp G        &kp H        &bhm RCTRL J  &bhm RSHFT K  &bhm RALT L  &kp UNDER  &kp SQT
-&kp CAPS    &kp Z  &kp X        &kp C         &kp V            &kp B        &kp N        &kp M         &kp COMMA     &kp DOT      &kp FSLH   &kp COLON
-                                &kp LEFT_GUI  &lt 3 BACKSPACE  &lt 1 TAB    &lt 2 SPACE  &kp ENTER     &kp ESCAPE
+&kp TAB     &kp Q            &kp W        &kp E         &kp R          &kp T        &kp Y        &kp U         &kp I         &kp O        &kp P                 &kp DEL
+&sk LSHIFT  &bhm LEFT_GUI A  &bhm LALT S  &bhm LSHFT D  &bhm LCTRL F   &kp G        &kp H        &bhm RCTRL J  &bhm RSHFT K  &bhm RALT L  &bhm RIGHT_GUI UNDER  &kp SQT
+&kp CAPS    &kp Z            &kp X        &kp C         &kp V          &kp B        &kp N        &kp M         &kp COMMA     &kp DOT      &kp FSLH              &kp COLON
+                                          &kp LEFT_GUI  &kp BACKSPACE  &lt 1 TAB    &lt 2 SPACE  &lt 3 ENTER   &kp ESCAPE
             >;
         };
 
@@ -100,10 +100,10 @@
 
             display-name = "Raise";
             bindings = <
-&trans  &kp GRAVE  &kp LT    &kp GT     &kp DQT    &kp PRCNT    &kp TILDE  &kp LT     &kp LBKT  &kp RBKT  &kp HASH   &trans
-&trans  &kp EXCL   &kp PLUS  &kp MINUS  &kp EQUAL  &kp POUND    &kp PIPE   &kp COLON  &kp LPAR  &kp RPAR  &kp SEMI   &trans
-&trans  &kp CARET  &kp FSLH  &kp STAR   &kp BSLH   &kp AT       &kp AMPS   &kp DLLR   &kp LBRC  &kp RBRC  &kp QMARK  &trans
-                             &trans     &trans     &trans       &trans     &trans     &trans
+&trans  &kp GRAVE  &kp LT     &kp GT    &kp DQT    &kp PRCNT    &kp TILDE  &kp LT     &kp LBKT  &kp RBKT  &kp HASH   &trans
+&trans  &kp EXCL   &kp MINUS  &kp PLUS  &kp EQUAL  &kp POUND    &kp PIPE   &kp COLON  &kp LPAR  &kp RPAR  &kp SEMI   &trans
+&trans  &kp CARET  &kp FSLH   &kp STAR  &kp BSLH   &kp AT       &kp AMPS   &kp DLLR   &kp LBRC  &kp RBRC  &kp QMARK  &trans
+                              &trans    &trans     &trans       &trans     &trans     &trans
             >;
         };
 
