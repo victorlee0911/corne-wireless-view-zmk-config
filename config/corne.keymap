@@ -118,9 +118,9 @@
 
         movement {
             bindings = <
-&trans  &trans  &trans    &trans     &trans     &trans    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans
-&trans  &trans  &kp LALT  &kp LSHFT  &kp LCTRL  &trans    &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT     &trans  &trans
-&trans  &trans  &trans    &trans     &trans     &trans    &trans      &trans        &trans        &trans        &trans  &trans
+&trans  &trans  &trans    &trans     &trans     &trans    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans     &trans
+&trans  &trans  &kp LALT  &kp LSHFT  &kp LCTRL  &trans    &trans      &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT  &trans
+&trans  &trans  &trans    &trans     &trans     &trans    &trans      &trans        &trans        &trans        &trans     &trans
                           &trans     &trans     &trans    &trans      &windows_ss   &trans
             >;
         };
