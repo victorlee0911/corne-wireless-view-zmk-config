@@ -68,17 +68,17 @@
 
             display-name = "Base";
             bindings = <
-&tog 1      &kp Q            &kp W        &kp E         &kp R          &kp T        &kp Y        &kp U         &kp I         &kp O        &kp P                 &kp DEL
-&sk LSHIFT  &bhm LEFT_GUI A  &bhm LALT S  &bhm LSHFT D  &bhm LCTRL F   &kp G        &kp H        &bhm RCTRL J  &bhm RSHFT K  &bhm RALT L  &bhm RIGHT_GUI UNDER  &kp SQT
-&kp CAPS    &kp Z            &kp X        &kp C         &kp V          &kp B        &kp N        &kp M         &kp COMMA     &kp DOT      &kp FSLH              &kp COLON
-                                          &kp LEFT_GUI  &kp BACKSPACE  &lt 2 TAB    &lt 3 SPACE  &lt 4 ENTER   &kp ESCAPE
+&tog 1            &kp Q  &kp W  &kp E         &kp R        &kp T        &kp Y        &kp U          &kp I                  &kp O    &kp P      &kp DEL
+&bhm LSHIFT CAPS  &kp A  &kp S  &kp D         &kp F        &kp G        &kp H        &kp J          &kp K                  &kp L    &kp COLON  &bhm RSHFT SQT
+&kp LCTRL         &kp Z  &kp X  &kp C         &kp V        &kp B        &kp N        &kp M          &kp COMMA              &kp DOT  &kp FSLH   &kp UNDER
+                                &kp LEFT_GUI  &lt 3 ENTER  &lt 2 TAB    &lt 4 SPACE  &kp BACKSPACE  &bhm ESCAPE RIGHT_ALT
             >;
         };
 
         gaming {
             bindings = <
 &kp ESCAPE  &trans  &trans  &trans    &trans          &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB     &kp A   &kp S   &kp D     &kp F           &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB     &trans  &trans  &trans    &trans          &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &kp ENTER   &trans  &trans  &trans    &trans          &trans       &trans  &trans  &trans  &trans  &trans  &trans
                             &kp LALT  &kp LEFT_SHIFT  &kp SPACE    &trans  &trans  &tog 1
             >;
