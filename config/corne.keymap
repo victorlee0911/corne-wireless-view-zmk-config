@@ -118,10 +118,10 @@
 
         movement {
             bindings = <
-&trans  &trans  &trans         &trans                &trans     &trans    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans         &trans
-&trans  &trans  &kp LG(MINUS)  &kp LG(PLUS)          &kp LCTRL  &trans    &trans      &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT      &trans
-&trans  &trans  &trans         &kp LG(LS(NUMBER_4))  &trans     &trans    &trans      &kp LC(LEFT)  &trans        &trans        &kp LC(RIGHT)  &trans
-                               &trans                &trans     &trans    &trans      &windows_ss   &trans
+&trans  &trans           &trans         &trans                &trans       &trans    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans         &trans
+&trans  &trans           &kp LG(MINUS)  &kp LG(PLUS)          &kp LCTRL    &trans    &trans      &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT      &trans
+&trans  &kp LS(LC(TAB))  &trans         &kp LG(LS(NUMBER_4))  &kp LC(TAB)  &trans    &trans      &kp LC(LEFT)  &trans        &trans        &kp LC(RIGHT)  &trans
+                                        &trans                &trans       &trans    &trans      &windows_ss   &trans
             >;
         };
     };
