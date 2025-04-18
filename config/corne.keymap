@@ -68,9 +68,9 @@
 
             display-name = "Base";
             bindings = <
-&kp GRAVE         &kp Q  &kp W  &kp E       &kp R        &kp T        &kp Y              &kp U          &kp I                  &kp O    &kp P      &kp DEL
-&bhm LSHIFT CAPS  &kp A  &kp S  &kp D       &kp F        &kp G        &kp H              &kp J          &kp K                  &kp L    &kp COLON  &bhm RSHFT SQT
-&kp LCTRL         &kp Z  &kp X  &kp C       &kp V        &kp B        &kp N              &kp M          &kp COMMA              &kp DOT  &kp FSLH   &kp MINUS
+&kp GRAVE         &kp Q  &kp W  &kp E       &kp R        &kp T        &kp Y              &kp U          &kp I                  &kp O    &kp P     &kp DEL
+&bhm LSHIFT CAPS  &kp A  &kp S  &kp D       &kp F        &kp G        &kp H              &kp J          &kp K                  &kp L    &kp SEMI  &kp APOS
+&kp LCTRL         &kp Z  &kp X  &kp C       &kp V        &kp B        &kp N              &kp M          &kp COMMA              &kp DOT  &kp FSLH  &kp UNDER
                                 &lt 3 LGUI  &lt 2 ENTER  &lt 1 TAB    &bhm LSHIFT SPACE  &kp BACKSPACE  &bhm RIGHT_ALT ESCAPE
             >;
         };
@@ -84,9 +84,9 @@
 
             display-name = "Raise";
             bindings = <
-&trans  &kp GRAVE  &kp LT     &kp GT    &kp DQT    &kp PRCNT    &kp TILDE  &trans     &kp LBKT  &kp RBKT  &trans    &trans
-&trans  &kp EXCL   &kp MINUS  &kp PLUS  &kp EQUAL  &kp POUND    &kp PIPE   &kp COLON  &kp LPAR  &kp RPAR  &kp SEMI  &trans
-&trans  &kp CARET  &kp FSLH   &kp STAR  &kp BSLH   &kp AT       &kp AMPS   &kp DLLR   &kp LBRC  &kp RBRC  &trans    &trans
+&trans  &kp GRAVE  &kp LT     &kp GT    &kp DQT    &kp PRCNT    &kp TILDE  &trans     &kp LBKT  &kp RBKT  &trans  &trans
+&trans  &kp EXCL   &kp MINUS  &kp PLUS  &kp EQUAL  &kp POUND    &kp PIPE   &kp COLON  &kp LPAR  &kp RPAR  &trans  &trans
+&trans  &kp CARET  &kp FSLH   &kp STAR  &kp BSLH   &kp AT       &kp AMPS   &kp DLLR   &kp LBRC  &kp RBRC  &trans  &trans
                               &trans    &trans     &trans       &trans     &trans     &trans
             >;
         };
