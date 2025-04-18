@@ -68,19 +68,26 @@
 
             display-name = "Base";
             bindings = <
-&tog 1            &kp Q  &kp W  &kp E         &kp R        &kp T        &kp Y        &kp U          &kp I                  &kp O    &kp P      &kp DEL
-&bhm LSHIFT CAPS  &kp A  &kp S  &kp D         &kp F        &kp G        &kp H        &kp J          &kp K                  &kp L    &kp COLON  &bhm RSHFT SQT
-&kp LCTRL         &kp Z  &kp X  &kp C         &kp V        &kp B        &kp N        &kp M          &kp COMMA              &kp DOT  &kp FSLH   &kp MINUS
-                                &kp LEFT_GUI  &lt 2 ENTER  &lt 3 TAB    &lt 4 SPACE  &kp BACKSPACE  &bhm RIGHT_ALT ESCAPE
+&kp GRAVE         &kp Q  &kp W  &kp E       &kp R        &kp T        &kp Y              &kp U          &kp I                  &kp O    &kp P      &kp DEL
+&bhm LSHIFT CAPS  &kp A  &kp S  &kp D       &kp F        &kp G        &kp H              &kp J          &kp K                  &kp L    &kp COLON  &bhm RSHFT SQT
+&kp LCTRL         &kp Z  &kp X  &kp C       &kp V        &kp B        &kp N              &kp M          &kp COMMA              &kp DOT  &kp FSLH   &kp MINUS
+                                &lt 3 LGUI  &lt 2 ENTER  &lt 1 TAB    &bhm LSHIFT SPACE  &kp BACKSPACE  &bhm RIGHT_ALT ESCAPE
             >;
         };
 
-        gaming {
+        symbol {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
+
+            display-name = "Raise";
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans    &trans          &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB     &trans  &trans  &trans    &trans          &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&kp ENTER   &trans  &trans  &trans    &trans          &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                            &kp LALT  &kp LEFT_SHIFT  &kp SPACE    &trans  &trans  &tog 1
+&trans  &kp GRAVE  &kp LT     &kp GT    &kp DQT    &kp PRCNT    &kp TILDE  &trans     &kp LBKT  &kp RBKT  &trans    &trans
+&trans  &kp EXCL   &kp MINUS  &kp PLUS  &kp EQUAL  &kp POUND    &kp PIPE   &kp COLON  &kp LPAR  &kp RPAR  &kp SEMI  &trans
+&trans  &kp CARET  &kp FSLH   &kp STAR  &kp BSLH   &kp AT       &kp AMPS   &kp DLLR   &kp LBRC  &kp RBRC  &trans    &trans
+                              &trans    &trans     &trans       &trans     &trans     &trans
             >;
         };
 
@@ -97,22 +104,6 @@
 &kp LSHIFT  &kp F5  &bhm LALT F6  &bhm LSHFT F7  &bhm LCTRL F8  &trans    &kp LEFT  &bhm RCTRL N4  &bhm RSHFT N5  &bhm RALT N6  &kp RIGHT      &trans
 &kp LCTRL   &kp F1  &kp F2        &kp F3         &kp F4         &trans    &trans    &kp N1         &kp N2         &kp N3        &kp BACKSPACE  &trans
                                   &kp LGUI       &kp LALT       &trans    &trans    &kp N0         &kp RALT
-            >;
-        };
-
-        symbol {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            display-name = "Raise";
-            bindings = <
-&trans  &kp GRAVE  &kp LT     &kp GT    &kp DQT    &kp PRCNT    &kp TILDE  &kp LT     &kp LBKT  &kp RBKT  &kp HASH   &trans
-&trans  &kp EXCL   &kp MINUS  &kp PLUS  &kp EQUAL  &kp POUND    &kp PIPE   &kp COLON  &kp LPAR  &kp RPAR  &kp SEMI   &trans
-&trans  &kp CARET  &kp FSLH   &kp STAR  &kp BSLH   &kp AT       &kp AMPS   &kp DLLR   &kp LBRC  &kp RBRC  &kp QMARK  &trans
-                              &trans    &trans     &trans       &trans     &trans     &trans
             >;
         };
 
