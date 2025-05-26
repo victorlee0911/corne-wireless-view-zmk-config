@@ -84,17 +84,17 @@
         clh: combo_layer_hybrid {
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
-            bindings
-                = <&macro_param_1to1>
-                , <&macro_press &mo MACRO_PLACEHOLDER>
-                , <&macro_param_2to1>
-                , <&macro_tap &kp MACRO_PLACEHOLDER>
-                , <&macro_pause_for_release>
-                , <&macro_param_1to1>
-                , <&macro_release &mo MACRO_PLACEHOLDER>
-                ;
+            bindings =
+                <&macro_param_1to1>,
+                <&macro_press>,
+                <&mo MACRO_PLACEHOLDER &macro_param_2to1>,
+                <&macro_tap>,
+                <&kp MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_param_1to1>,
+                <&macro_release>,
+                <&mo MACRO_PLACEHOLDER>;
         };
-
     };
 
     keymap {
@@ -109,10 +109,10 @@
 
             display-name = "Base";
             bindings = <
-&kp GRAVE  &kp Q         &kp W         &kp E           &kp R          &kp T        &kp Y              &kp U          &kp I                  &kp O         &kp P            &kp DEL
-&mo 3      &tlhm LGUI A  &tlhm LALT S  &tlhm RSHIFT D  &tlhm LCTRL F  &kp G        &kp H              &trhm RCTRL J  &trhm RSHIFT K         &trhm RALT L  &trhm RGUI SEMI  &kp APOS
-&kp LCTRL  &kp Z         &kp X         &kp C           &kp V          &kp B        &kp N              &kp M          &kp COMMA              &kp DOT       &kp FSLH         &kp UNDER
-                                       &kp LGUI        &lt 2 ENTER    &lt 1 TAB    &bhm LSHIFT SPACE  &kp BACKSPACE  &bhm RIGHT_ALT ESCAPE
+&kp GRAVE  &kp Q         &kp W         &kp E           &kp R          &kp T    &kp Y              &kp U          &kp I                  &kp O         &kp P            &kp DEL
+&mo 3      &tlhm LGUI A  &tlhm LALT S  &tlhm RSHIFT D  &tlhm LCTRL F  &kp G    &kp H              &trhm RCTRL J  &trhm RSHIFT K         &trhm RALT L  &trhm RGUI SEMI  &kp APOS
+&kp LCTRL  &kp Z         &kp X         &kp C           &kp V          &kp B    &kp N              &kp M          &kp COMMA              &kp DOT       &kp FSLH         &kp UNDER
+                                       &kp LGUI        &lt 2 ENTER    &mo 1    &bhm LSHIFT SPACE  &kp BACKSPACE  &bhm RIGHT_ALT ESCAPE
             >;
         };
 
