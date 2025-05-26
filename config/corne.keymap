@@ -11,6 +11,8 @@
 / {
     behaviors {
         tlhm: timerless_lhr_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
@@ -20,6 +22,8 @@
             hold-trigger-on-release;
         };
         trhm: timerless_rhr_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
