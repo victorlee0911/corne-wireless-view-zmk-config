@@ -97,6 +97,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        l_grave {
+            bindings = <&clh 1 GRAVE>;
+            key-positions = <1 38>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
