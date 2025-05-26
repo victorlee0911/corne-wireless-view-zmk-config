@@ -237,53 +237,53 @@
         };
 
         n0 {
-            bindings = <&kp N0>;
-            key-positions = <36 40>;
+            bindings = <&clh 3 N0>;
+            key-positions = <40 23>;
         };
 
         n1 {
-            bindings = <&kp NUMBER_1>;
-            key-positions = <36 31>;
+            bindings = <&clh 3 NUMBER_1>;
+            key-positions = <31 23>;
         };
 
         n2 {
-            bindings = <&kp NUMBER_2>;
-            key-positions = <36 32>;
+            bindings = <&clh 3 NUMBER_2>;
+            key-positions = <32 23>;
         };
 
         n3 {
-            bindings = <&kp NUMBER_3>;
-            key-positions = <36 33>;
+            bindings = <&clh 3 NUMBER_3>;
+            key-positions = <33 23>;
         };
 
         n4 {
-            bindings = <&kp NUMBER_4>;
-            key-positions = <36 19>;
+            bindings = <&clh 3 NUMBER_4>;
+            key-positions = <19 23>;
         };
 
         n5 {
-            bindings = <&kp N5>;
-            key-positions = <36 20>;
+            bindings = <&clh 3 N5>;
+            key-positions = <20 23>;
         };
 
         n6 {
-            bindings = <&kp NUMBER_6>;
-            key-positions = <36 21>;
+            bindings = <&clh 3 NUMBER_6>;
+            key-positions = <21 23>;
         };
 
         n7 {
-            bindings = <&kp N7>;
-            key-positions = <36 7>;
+            bindings = <&clh 3 N7>;
+            key-positions = <7 23>;
         };
 
         n8 {
-            bindings = <&kp N8>;
-            key-positions = <36 8>;
+            bindings = <&clh 3 N8>;
+            key-positions = <8 23>;
         };
 
         n9 {
-            bindings = <&kp N9>;
-            key-positions = <36 9>;
+            bindings = <&clh 3 N9>;
+            key-positions = <9 23>;
         };
     };
 
@@ -299,10 +299,10 @@
 
             display-name = "Base";
             bindings = <
-&kp GRAVE  &kp Q         &kp W         &kp E           &kp R          &kp T    &kp Y  &kp U              &kp I                  &kp O         &kp P            &kp DEL
-&mo 4      &tlhm LGUI A  &tlhm LALT S  &tlhm RSHIFT D  &tlhm LCTRL F  &kp G    &kp H  &trhm RCTRL J      &trhm RSHIFT K         &trhm RALT L  &trhm RGUI SEMI  &kp ENTER
-&kp LCTRL  &kp Z         &kp X         &kp C           &kp V          &kp B    &kp N  &kp M              &kp COMMA              &kp DOT       &kp FSLH         &kp UNDER
-                                       &mo 3           &kp BACKSPACE  &mo 1    &mo 2  &bhm RSHIFT SPACE  &bhm RIGHT_ALT ESCAPE
+&kp ESCAPE  &kp Q         &kp W         &kp E           &kp R          &kp T    &kp Y  &kp U              &kp I           &kp O         &kp P            &kp DEL
+&mo 4       &tlhm LGUI A  &tlhm LALT S  &tlhm RSHIFT D  &tlhm LCTRL F  &kp G    &kp H  &trhm RCTRL J      &trhm RSHIFT K  &trhm RALT L  &trhm RGUI SEMI  &mo 3
+&kp LCTRL   &kp Z         &kp X         &kp C           &kp V          &kp B    &kp N  &kp M              &kp COMMA       &kp DOT       &kp FSLH         &kp UNDER
+                                        &kp TAB         &kp BACKSPACE  &mo 1    &mo 2  &bhm RSHIFT SPACE  &kp ENTER
             >;
         };
 
@@ -350,10 +350,10 @@
 
         movement {
             bindings = <
-&trans  &trans  &trans         &trans           &trans          &kp LS(LC(GRAVE))    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &trans     &trans
-&trans  &trans  &kp LG(MINUS)  &kp LG(PLUS)     &kp LS(LG(N4))  &trans               &trans      &kp LEFT      &kp DOWN       &kp UP        &kp RIGHT  &trans
-&trans  &trans  &trans         &kp LS(LC(TAB))  &kp LC(TAB)     &trans               &trans      &kp LC(LEFT)  &kp LC(RIGHT)  &trans        &trans     &trans
-                               &trans           &trans          &trans               &trans      &windows_ss   &trans
+&trans  &trans  &trans         &trans           &trans          &kp LS(LC(GRAVE))    &trans  &bt BT_SEL 0  &kp UP_ARROW   &bt BT_SEL 2  &trans  &trans
+&trans  &trans  &kp LG(MINUS)  &kp LG(PLUS)     &kp LS(LG(N4))  &trans               &trans  &kp LEFT      &kp DOWN       &kp RIGHT     &trans  &trans
+&trans  &trans  &trans         &kp LS(LC(TAB))  &kp LC(TAB)     &trans               &trans  &kp LC(LEFT)  &kp LC(RIGHT)  &trans        &trans  &trans
+                               &trans           &trans          &trans               &trans  &windows_ss   &trans
             >;
         };
     };
