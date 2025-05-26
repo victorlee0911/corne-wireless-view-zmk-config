@@ -104,6 +104,136 @@
             bindings = <&clh 1 GRAVE>;
             key-positions = <1 38>;
         };
+
+        l_lessthan {
+            bindings = <&clh 1 LT>;
+            key-positions = <2 38>;
+        };
+
+        l_greaterthan {
+            bindings = <&clh 1 GT>;
+            key-positions = <3 38>;
+        };
+
+        l_dquote {
+            bindings = <&clh 1 DOUBLE_QUOTES>;
+            key-positions = <4 38>;
+        };
+
+        l_percent {
+            bindings = <&clh 1 PERCENT>;
+            key-positions = <5 38>;
+        };
+
+        l_excl {
+            bindings = <&clh 1 EXCL>;
+            key-positions = <13 38>;
+        };
+
+        l_minus {
+            bindings = <&clh 1 MINUS>;
+            key-positions = <14 38>;
+        };
+
+        l_plus {
+            bindings = <&clh 1 PLUS>;
+            key-positions = <15 38>;
+        };
+
+        l_equal {
+            bindings = <&clh 1 EQUAL>;
+            key-positions = <16 38>;
+        };
+
+        l_hash {
+            bindings = <&clh 1 POUND>;
+            key-positions = <17 38>;
+        };
+
+        l_caret {
+            bindings = <&clh 1 CARET>;
+            key-positions = <25 38>;
+        };
+
+        l_slash {
+            bindings = <&clh 1 SLASH>;
+            key-positions = <26 38>;
+        };
+
+        l_star {
+            bindings = <&clh 1 STAR>;
+            key-positions = <27 38>;
+        };
+
+        l_backslash {
+            bindings = <&clh 1 BACKSLASH>;
+            key-positions = <28 38>;
+        };
+
+        l_at {
+            bindings = <&clh 1 AT>;
+            key-positions = <38 29>;
+        };
+
+        r_tilde {
+            bindings = <&clh 2 TILDE>;
+            key-positions = <6 39>;
+        };
+
+        l_lbkt {
+            bindings = <&clh 2 LBKT>;
+            key-positions = <8 39>;
+        };
+
+        r_rbkt {
+            bindings = <&clh 2 RBKT>;
+            key-positions = <9 39>;
+        };
+
+        r_pipe {
+            bindings = <&clh 2 PIPE>;
+            key-positions = <18 39>;
+        };
+
+        r_colon {
+            bindings = <&clh 2 COLON>;
+            key-positions = <19 39>;
+        };
+
+        l_lparen {
+            bindings = <&clh 2 LEFT_PARENTHESIS>;
+            key-positions = <20 39>;
+        };
+
+        r_rparen {
+            bindings = <&clh 2 RIGHT_PARENTHESIS>;
+            key-positions = <21 39>;
+        };
+
+        r_amps {
+            bindings = <&clh 2 AMPS>;
+            key-positions = <30 39>;
+        };
+
+        r_dollar {
+            bindings = <&clh 2 DOLLAR>;
+            key-positions = <31 39>;
+        };
+
+        r_lbrace {
+            bindings = <&clh 2 LEFT_BRACE>;
+            key-positions = <32 39>;
+        };
+
+        r_rbrace {
+            bindings = <&clh 2 RIGHT_BRACE>;
+            key-positions = <39 33>;
+        };
+
+        r_apos {
+            bindings = <&clh 2 APOS>;
+            key-positions = <7 39>;
+        };
     };
 
     keymap {
@@ -118,14 +248,14 @@
 
             display-name = "Base";
             bindings = <
-&kp GRAVE  &kp Q         &kp W         &kp E           &kp R          &kp T    &kp Y              &kp U          &kp I                  &kp O         &kp P            &kp DEL
-&mo 3      &tlhm LGUI A  &tlhm LALT S  &tlhm RSHIFT D  &tlhm LCTRL F  &kp G    &kp H              &trhm RCTRL J  &trhm RSHIFT K         &trhm RALT L  &trhm RGUI SEMI  &kp APOS
-&kp LCTRL  &kp Z         &kp X         &kp C           &kp V          &kp B    &kp N              &kp M          &kp COMMA              &kp DOT       &kp FSLH         &kp UNDER
-                                       &kp LGUI        &lt 2 ENTER    &mo 1    &bhm LSHIFT SPACE  &kp BACKSPACE  &bhm RIGHT_ALT ESCAPE
+&kp GRAVE  &kp Q         &kp W         &kp E           &kp R          &kp T    &kp Y  &kp U          &kp I                  &kp O         &kp P            &kp DEL
+&mo 4      &tlhm LGUI A  &tlhm LALT S  &tlhm RSHIFT D  &tlhm LCTRL F  &kp G    &kp H  &trhm RCTRL J  &trhm RSHIFT K         &trhm RALT L  &trhm RGUI SEMI  &kp APOS
+&kp LCTRL  &kp Z         &kp X         &kp C           &kp V          &kp B    &kp N  &kp M          &kp COMMA              &kp DOT       &kp FSLH         &kp UNDER
+                                       &kp LGUI        &lt 3 ENTER    &mo 1    &mo 2  &kp SPACE      &bhm RIGHT_ALT ESCAPE
             >;
         };
 
-        symbol {
+        symbol_left {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -134,10 +264,20 @@
 
             display-name = "Raise";
             bindings = <
-&trans  &kp GRAVE  &kp LT     &kp GT    &kp DQT    &kp PRCNT    &kp TILDE  &trans     &kp LBKT  &kp RBKT  &trans  &trans
-&trans  &kp EXCL   &kp MINUS  &kp PLUS  &kp EQUAL  &kp POUND    &kp PIPE   &kp COLON  &kp LPAR  &kp RPAR  &trans  &trans
-&trans  &kp CARET  &kp FSLH   &kp STAR  &kp BSLH   &kp AT       &kp AMPS   &kp DLLR   &kp LBRC  &kp RBRC  &trans  &trans
-                              &trans    &trans     &trans       &trans     &trans     &trans
+&trans  &kp GRAVE  &kp LT     &kp GT    &kp DQT    &kp PRCNT    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp EXCL   &kp MINUS  &kp PLUS  &kp EQUAL  &kp POUND    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp CARET  &kp FSLH   &kp STAR  &kp BSLH   &kp AT       &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans    &trans     &trans       &trans  &trans  &trans
+            >;
+        };
+
+        symbol_right {
+            display-name = "Raise";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &kp TILDE  &kp APOS   &kp LBKT  &kp RBKT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PIPE   &kp COLON  &kp LPAR  &kp RPAR  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp AMPS   &kp DLLR   &kp LBRC  &kp RBRC  &trans  &trans
+                        &trans  &trans  &trans    &trans     &trans     &trans
             >;
         };
 
