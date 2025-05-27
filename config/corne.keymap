@@ -350,10 +350,10 @@
 
         movement {
             bindings = <
-&trans  &trans  &trans         &trans           &trans          &kp LS(LC(GRAVE))    &trans  &bt BT_SEL 0  &kp UP_ARROW   &bt BT_SEL 2  &trans  &trans
-&trans  &trans  &kp LG(MINUS)  &kp LG(PLUS)     &kp LS(LG(N4))  &trans               &trans  &kp LEFT      &kp DOWN       &kp RIGHT     &trans  &trans
-&trans  &trans  &trans         &kp LS(LC(TAB))  &kp LC(TAB)     &trans               &trans  &kp LC(LEFT)  &kp LC(RIGHT)  &trans        &trans  &trans
-                               &trans           &trans          &trans               &trans  &windows_ss   &trans
+&trans  &trans  &kp LG(MINUS)     &kp LG(PLUS)     &kp LS(LG(NUMBER_4))  &kp LS(LC(GRAVE))    &trans  &bt BT_SEL 0  &kp UP_ARROW   &bt BT_SEL 2  &trans  &trans
+&trans  &trans  &trans            &trans           &trans                &trans               &trans  &kp LEFT      &kp DOWN       &kp RIGHT     &trans  &trans
+&trans  &trans  &kp LC(CAPSLOCK)  &kp LS(LC(TAB))  &kp LC(TAB)           &trans               &trans  &kp LC(LEFT)  &kp LC(RIGHT)  &trans        &trans  &trans
+                                  &trans           &trans                &trans               &trans  &windows_ss   &trans
             >;
         };
     };
